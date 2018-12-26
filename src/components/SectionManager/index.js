@@ -26,9 +26,7 @@ export default class SectionManager extends Component {
 
     if (scrollProps.sectionName !== oldScrollProps.sectionName) {
       this.scrollToSection(scrollProps.sectionName)
-    }
-
-    if (postProps.postNumber !== oldPostProps.postNumber) {
+    } else if (postProps.postNumber !== oldPostProps.postNumber) {
       this.updateSectionBody(postProps.postNumber);
     }
   }
